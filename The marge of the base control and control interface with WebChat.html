@@ -1,0 +1,167 @@
+<!DOCTYPE html> 
+<html> 
+
+	<head> 
+
+<title>Base and Control Interface </title> 
+
+	</head> 
+
+<style> 
+
+.forward{
+border 2px solid #43a047; 
+padding: 16px; 
+color:#fff; 
+background: #43a047; 
+Border-radius: 6px; 
+Transition: all 0.5;
+Font-size: 15px; 
+}
+
+.left{
+border 2px solid #0277bd; 
+padding: 16px; 
+color:#fff; 
+background: #0277bd; 
+Border-radius: 6px; 
+Transition: all 0.5;
+Font-size: 15px; 
+}
+
+.right{
+border 2px solid #ef6c00; 
+padding: 16px; 
+color:#fff; 
+background: #ef6c00; 
+Border-radius: 6px; 
+Transition: all 0.5;
+Font-size: 15px; 
+} 
+
+.stop{ 
+border 2px solid #d50000; 
+padding: 16px; 
+color:#fff; 
+background: #d50000; 
+Border-radius: 6px; 
+Transition: all 0.5;
+Font-size: 15px; 
+}
+
+.backward{ 
+border 2px solid #6d4c41; 
+padding: 16px; 
+color:#fff; 
+background: #6d4c41; 
+Border-radius: 6px; 
+Transition: all 0.5;
+Font-size: 15px; 
+}
+
+</style> 
+
+	<body> 
+
+<div style="background-color:lightblue">
+
+<h1 align="center"> Robot Arm Control Interface </h1> 
+</div> 
+
+<hr> 
+<hr> 
+
+<h3 align="left"> <b> Engine 1:</b> </h3> &nbsp;  &nbsp; <div class="main"> <input type="range" min="0" max="200" value="100"> </div> 
+
+
+<hr>
+<hr> 
+
+
+<h3 align="left"> <b> Engine 2:</b> </h3> &nbsp;  &nbsp; <div class="main"> <input type="range" min="0" max="200" value="100"> </div> 
+
+<hr> 
+<hr> 
+
+<h3 align="left"> <b> Engine 3:</b> </h3> &nbsp;  &nbsp; <div class="main"> <input type="range" min="0" max="200" value="100"> </div> 
+ 
+<hr> 
+<hr> 
+
+<h3 align="left"> <b> Engine 4:</b> </h3> &nbsp;  &nbsp; <div class="main"> <input type="range" min="0" max="200" value="100"> </div> 
+
+<hr> 
+<hr> 
+
+<h3 align="left"> <b> Engine 5:</b> </h3> &nbsp;  &nbsp; <div class="main"> <input type="range" min="0" max="200" value="100"> </div> 
+
+<hr> 
+<hr> 
+
+
+<input type="submit" value="Save">  &nbsp;  &nbsp; <input type="submit" value="Run">
+
+<hr> 
+<hr> 
+<hr> 
+<div style="background-color:#8c9eff">
+
+<h1 align="center"> Robot Base Control Interface </h1> 
+</div> 
+
+<hr> 
+<hr> 
+
+
+<div align="center">
+<input class="forward" type="submit" value="Forward" > 
+</div>
+<br>
+<br> 
+<br> 
+<br>
+
+<div align="left">
+<input class="left" type="submit" value="Left" >
+</div> 
+
+<div align="right">
+<input class="right" type="submit" value="Right"> 
+</div> 
+ 
+<div align="center">
+<input class="stop" type="submit" value="Stop">
+</div> 
+
+<br> 
+<br> 
+<br>
+
+<div align="center">
+<input class="backward" type="submit" value="Backward"> 
+</div>
+<br>
+<br>
+<br>
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "cce2e8e0-c69a-4725-b78b-6e11d3e8befa", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "9a88ea73-e79d-44f6-8c74-c9c7e04cad92", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+
+</body> 
+
+  
+
+
+</html> 
